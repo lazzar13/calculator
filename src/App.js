@@ -8,7 +8,7 @@ function App() {
 
   function handleNumber(num) {
     if (input === "0" && num === 0) return;
-    setInput((prevInput) => prevInput === "0" ? String(num) : prevInput + num);
+    setInput((inputPre) => inputPre === "0" ? String(num) : inputPre + num);
   }
 
   function handleOperator(op) {
